@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Carl-Hugo Marcotte",
+    "classifications": ["ForEvolve", "conventions", "prettier"],
+    "name": "ForEvolve Prettier Configs",
+    "identity": "ForEvolve.Conventions.Prettier",
+    "shortName": "prettierrc",
+    "tags": {
+        "language": "C#",
+        "type": "item"
+    },
+    "preferNameDirectory": false
+}

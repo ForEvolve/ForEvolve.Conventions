@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Carl-Hugo Marcotte",
+    "classifications": ["ForEvolve", "conventions", "editorconfig"],
+    "name": "ForEvolve .editorconfig",
+    "identity": "ForEvolve.Conventions.editorconfig",
+    "shortName": "editorconfig",
+    "tags": {
+        "language": "C#",
+        "type": "item"
+    },
+    "preferNameDirectory": false
+}
