@@ -1,0 +1,28 @@
+﻿<!-- 
+  This file is not used.
+  I pack using the csproj for now; I'll switch from csproj to nuspec some day...
+ -->
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>ForEvolve.Conventions.CodeFormat</id>
+    <version>0.0.12</version>
+    <authors>Carl-Hugo Marcotte</authors>
+    <owners>Carl-Hugo Marcotte</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/ForEvolve/ForEvolve.Conventions</projectUrl>
+    <description>Package Description</description>
+    <copyright>Carl-Hugo Marcotte</copyright>
+    <repository type="git" url="https://github.com/ForEvolve/ForEvolve.Conventions" />
+    <!-- <contentFiles>
+      <files include=".editorconfig" buildAction="Content" copyToOutput="true" />
+      <files include=".prettierrc" buildAction="Content" copyToOutput="true" />
+      <files include="ForEvolve.Conventions.CodeFormat.targets" buildAction="Content" copyToOutput="true" />
+    </contentFiles> -->
+  </metadata>
+  <!-- <files>
+    <file src=".editorconfig" target="" />
+    <file src=".prettierrc" target="" />
+    <file src="ForEvolve.Conventions.CodeFormat.targets" target="build" />
+  </files> -->
+</package>

@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.0</TargetFramework>
+    <Product>ForEvolve Code Format Conventions</Product>
+    <RepositoryUrl>https://github.com/ForEvolve/ForEvolve.Conventions</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IsPackable>True</IsPackable>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <Authors>Carl-Hugo Marcotte</Authors>
+    <Company>ForEvolve</Company>
+    <PackageProjectUrl>https://github.com/ForEvolve/ForEvolve.Conventions</PackageProjectUrl>
+    <License>MIT</License>
+    <Copyright>Carl-Hugo Marcotte</Copyright>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include=".editorconfig">
+      <Pack>true</Pack>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+    <Content Include=".prettierrc">
+      <Pack>true</Pack>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+    <Content Include="ForEvolve.Conventions.CodeFormat.targets">
+      <Pack>true</Pack>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+      <PackagePath>build\</PackagePath>
+    </Content>
+    <Content Include="ForEvolve.Conventions.CodeFormat.props">
+      <Pack>true</Pack>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+      <PackagePath>build\</PackagePath>
+    </Content>
+  </ItemGroup>
+</Project>

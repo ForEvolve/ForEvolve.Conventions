@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project InitialTargets="ForEvolveConventionsCodeFormatInstallTarget" 
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <!-- <ItemDefinitionGroup>
+        <PackageReference GeneratePathProperty="true" />
+    </ItemDefinitionGroup> -->
+    <!-- <Target Name="ForEvolveConventionsCodeFormatInstallTarget">
+        <Copy SourceFiles="$(NuGetPackageRoot)ForEvolve.Conventions.CodeFormat\0.0.29\Content\.editorconfig" DestinationFolder="$(ProjectDir)" />
+        <Copy SourceFiles="$(NuGetPackageRoot)ForEvolve.Conventions.CodeFormat\0.0.29\Content\.prettierrc" DestinationFolder="$(ProjectDir)" />
+    </Target> -->
+    <Choose>
+        <When Condition=" '$(SolutionDir)' == '' Or '$(SolutionDir)' == '*Undefined*' Or '$(SolutionDir)' == '*Undefined*\' Or '$(SolutionDir)' == '*Undefined*/' ">
+            <PropertyGroup>
+                <CodeFormatDestinationFolder>$(ProjectDir)</CodeFormatDestinationFolder>
+            </PropertyGroup>
+        </When>
+        <Otherwise>
+            <PropertyGroup>
+                <CodeFormatDestinationFolder>$(SolutionDir)</CodeFormatDestinationFolder>
+            </PropertyGroup>
+        </Otherwise>
+    </Choose>
+
+    <Target Name="ForEvolveConventionsCodeFormatInstallTarget">
+        <Copy SourceFiles="$(PkgForEvolve_Conventions_CodeFormat)\Content\.editorconfig" DestinationFolder="$(CodeFormatDestinationFolder)" />
+        <Copy SourceFiles="$(PkgForEvolve_Conventions_CodeFormat)\Content\.prettierrc" DestinationFolder="$(CodeFormatDestinationFolder)" />
+    </Target>
+
+</Project>
+<!-- InitialTargets="ForEvolveConventionsCodeFormatInstallTarget" -->

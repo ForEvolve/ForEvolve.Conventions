@@ -1,0 +1,7 @@
+<Project>
+    <ItemDefinitionGroup>
+        <PackageReference GeneratePathProperty="true" />
+    </ItemDefinitionGroup>
+</Project>
+
+<!-- Directory.Build.props -->
