@@ -1,14 +1,14 @@
 # ForEvolve.Conventions
 
+![Pack and Deploy master to NuGet.org](https://github.com/ForEvolve/ForEvolve.Conventions/workflows/Pack%20and%20Deploy%20master%20to%20NuGet.org/badge.svg)
+[![Nuget](https://img.shields.io/nuget/v/ForEvolve.Conventions.Templates)](https://www.nuget.org/packages/ForEvolve.Conventions.Templates)
+
 This repo contains coding conventions that I use in multiple projects. To simplify my life, I packed them as `dotnet new` templates. The templates can be installed from the command-line, using NuGet.
 
 Out of now I created:
 
 -   `.editorconfig`
 -   `.prettierrc`
-
-![Pack and Deploy master to NuGet.org](https://github.com/ForEvolve/ForEvolve.Conventions/workflows/Pack%20and%20Deploy%20master%20to%20NuGet.org/badge.svg)
-[![Nuget](https://img.shields.io/nuget/v/ForEvolve.Conventions.Templates)](https://www.nuget.org/packages/ForEvolve.Conventions.Templates)
 
 ## Usage
 
