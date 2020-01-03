@@ -7,6 +7,9 @@ Out of now I created:
 -   `.editorconfig`
 -   `.prettierrc`
 
+![Pack and Deploy master to NuGet.org](https://github.com/ForEvolve/ForEvolve.Conventions/workflows/Pack%20and%20Deploy%20master%20to%20NuGet.org/badge.svg)
+[![Nuget](https://img.shields.io/nuget/v/ForEvolve.Conventions.Templates)](https://www.nuget.org/packages/ForEvolve.Conventions.Templates)
+
 ## Usage
 
 To install the templates, you must execute the following command, once (templates are installed globally).
