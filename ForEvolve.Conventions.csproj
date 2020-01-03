@@ -2,12 +2,17 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0</PackageVersion>
+    <PackageVersion>1.0.0</PackageVersion>
     <PackageId>ForEvolve.Conventions.Templates</PackageId>
     <Title>ForEvolve Coding Conventions Templates</Title>
     <Authors>Carl-Hugo Marcotte</Authors>
-    <Description>Templates that creates files to enforce coding styles (.prettierrc and .editorconfig).</Description>
+    <Description>Templates that creates files to enforce coding conventions.</Description>
     <PackageTags>dotnet-new;templates;ForEvolve;editorconfig;prettierrc;prettier</PackageTags>
+    <PackageProjectUrl>https://github.com/ForEvolve/ForEvolve.Conventions</PackageProjectUrl>
+    <License>MIT</License>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <RepositoryUrl>https://github.com/ForEvolve/ForEvolve.Conventions</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
 
     <TargetFramework>netstandard2.0</TargetFramework>
 

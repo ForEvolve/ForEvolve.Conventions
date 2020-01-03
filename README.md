@@ -1,27 +1,33 @@
 # ForEvolve.Conventions
 
-This repo contains conventions like `.editorconfig` and `.prettierrc`, that can be installed as a NuGet Package.
+This repo contains coding conventions that I use in multiple projects. To simplify my life, I packed them as `dotnet new` templates. The templates can be installed from the command-line, using NuGet.
 
-## Install
+Out of now I created:
 
-In an `<ItemGroup>`, add the following `PackageReference` to your `.csproj`:
+-   `.editorconfig`
+-   `.prettierrc`
+
+## Usage
+
+To install the templates, you must execute the following command, once (templates are installed globally).
 
 ```xml
-<PackageReference Include="ForEvolve.Conventions.CodeFormat" Version="[insert the version here]" GeneratePathProperty="true" />
+dotnet new -i ForEvolve.Conventions.Templates
 ```
 
-## Known issues/limitation
+Then you can `dotnet new [templates name]` to generate the files. The available templates are:
 
-- The `GeneratePathProperty="true"` is very important to copy the files, otherwise some variables are missing.
-- If you install the package using standard tooling (`dotnet add package ForEvolve.Conventions.CodeFormat` or VS Package Manager), you may need to delete your `obj` directory after adding the `GeneratePathProperty` attribute. Otherwise the `.targets` gets stuck in a loop trying to copy the files from the older `PackageReference`.
-- If you install the package from VS, you might need to reopen it so it takes the `.editorconfig` into account; sounds like a bug in VS.
-- From VS Code, the files are copied twice, once at the project-level and once at the solution-level. I guess that `$(SolutionDir)` is not available at some point, leading to multiple execution context.
-- The package must be installed in a project,
+```bash
+dotnet new editorconfig
+dotnet new prettierrc
+```
+
+_Files are generated in the current directory._
 
 # How to contribute?
 
-If you would like to contribute to the project, first, thank you for your interest, and please read [Contributing to ForEvolve open source projects](https://github.com/ForEvolve/ForEvolve.DependencyInjection/tree/master/CONTRIBUTING.md) for more information.
+If you would like to contribute to the project, first, thank you for your interest, and please read [Contributing to ForEvolve open source projects](https://github.com/ForEvolve/ForEvolve.Conventions/tree/master/CONTRIBUTING.md) for more information.
 
 ## Contributor Covenant Code of Conduct
 
-Also, please read the [Contributor Covenant Code of Conduct](https://github.com/ForEvolve/ForEvolve.DependencyInjection/tree/master/CODE_OF_CONDUCT.md) that applies to all ForEvolve repositories.
+Also, please read the [Contributor Covenant Code of Conduct](https://github.com/ForEvolve/ForEvolve.Conventions/tree/master/CODE_OF_CONDUCT.md) that applies to all ForEvolve repositories.
