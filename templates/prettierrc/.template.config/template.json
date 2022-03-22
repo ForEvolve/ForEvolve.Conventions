@@ -4,7 +4,7 @@
     "classifications": ["ForEvolve", "conventions", "prettier"],
     "name": "ForEvolve Prettier Configs",
     "identity": "ForEvolve.Conventions.Prettier",
-    "shortName": "prettierrc",
+    "shortName": "chprettierrc",
     "tags": {
         "language": "C#",
         "type": "item"
