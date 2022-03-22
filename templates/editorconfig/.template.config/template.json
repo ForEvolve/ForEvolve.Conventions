@@ -4,7 +4,7 @@
     "classifications": ["ForEvolve", "conventions", "editorconfig"],
     "name": "ForEvolve .editorconfig",
     "identity": "ForEvolve.Conventions.editorconfig",
-    "shortName": "editorconfig",
+    "shortName": "cheditorconfig",
     "tags": {
         "language": "C#",
         "type": "item"
