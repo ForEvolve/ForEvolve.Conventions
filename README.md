@@ -21,8 +21,8 @@ dotnet new -i ForEvolve.Conventions.Templates
 Then you can `dotnet new [templates name]` to generate the files. The available templates are:
 
 ```bash
-dotnet new editorconfig
-dotnet new prettierrc
+dotnet new cheditorconfig
+dotnet new chprettierrc
 ```
 
 _Files are generated in the current directory._
